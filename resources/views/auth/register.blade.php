@@ -4,7 +4,6 @@
     <style>
         body {
             height: 700px;
-            background-image: url("https://p4.wallpaperbetter.com/wallpaper/40/461/105/video-game-love-money-rock-n-roll-original-anime-school-wallpaper-preview.jpg");
             background-size: cover;
             background-repeat:no-repeat;
             background-position: center center;
@@ -19,11 +18,8 @@
             display: grid;
             place-content: center;
 
-            /* Add a transparency to the background
-               using rgba value */
             background: rgba(255, 255, 255, 0.1);
 
-            /* Add a transparency to shadow */
             box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
         }
 
@@ -33,7 +29,7 @@
     round-lg shadow-lg" >
         <h1 class="text-5xl text-center pt-7">REGISTRO</h1>
         <div class="ima" >
-            <img class="m offset-3" src=" https://sat02pap001files.storage.live.com/y4m9YQNFz3Bw23yN7jaX4SVGvKnWX6B656RnehoyWQOdmeOXvxZGe4UY1E4cIjF4WVjOjcoai1MQMIoCBgh6nujA_-fRavx3C9WPrbGM5S9bNrmCMPVKB08d2qcR0S_eP-xz9OD8252cr6lEjr0aRbRbrxS5y_P5-G1sNh2BVJ3_z6oqbPrdBIZUhiwO4A_KVrj?width=1018&height=832&cropmode=none">
+            <img class="m offset-3" src=" https://cdn-icons-png.flaticon.com/512/3534/3534139.png">
         </div>
 
         <form class="mt-2" method="POST" action="">

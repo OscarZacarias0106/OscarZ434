@@ -35,9 +35,6 @@
           class="block mx-auto my-12 p-8  w-1/3 border border-gray-200
     round-lg shadow-lg" >
         <h1 class="text-3xl text-center font-bold">INICAR SESION</h1>
-        <div class="ima" >
-            <img class="m offset-2" >
-        </div>
 
         <form class="mt-10 "  method="POST" action="">
             @csrf

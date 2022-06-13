@@ -2,7 +2,7 @@
 @section('title', 'Lista')
 @section('content')
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://static.vecteezy.com/system/resources/previews/003/209/705/non_2x/happy-team-and-employees-vector.jpg"s>
     <div class="container mt-3">
         <div class="row justify-content-center">
             <div class="cold-md-11">
@@ -110,7 +110,6 @@
     @endif
 
 
-    <!--Mensaje de Eliminado-->
     @if(session('RegistroEliminado')=='Eliminado')
         <script>
             Swal.fire(
@@ -129,8 +128,8 @@
                 text: "Si presiona si se eliminara definitivamente",
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
+                confirmButtonColor: '#375d82',
+                cancelButtonColor: '#7e3939',
                 confirmButtonText: 'Si eliminar',
                 cancelButtonText: 'Cancelar'
             }).then((result) => {
@@ -149,9 +148,9 @@
                 text:'Este empleado no se puede borrar por la perdida de datos',
                 width: 600,
                 padding: '3em',
-                color: '#050404',
+                color: '#52bb52',
                 background: '#fff url(/images/trees.png)',
-                backdrop: `#F82D23`
+                backdrop: `#0d38a4`
             })
         </script>
     @endif

@@ -1,5 +1,5 @@
-@extends('layouts.base') <!--para heredar de base-->
-@section('title', 'Editar') <!--nombre pagina, nombre de seccion-->
+@extends('layouts.base')
+@section('title', 'Editar')
 @section('content')
 
     <div class="container">
@@ -21,7 +21,7 @@
 
                 <div class="card border-primary">
                     <div class="card border-primary">
-                        <form action="{{ route('editEmpleado', $emp->codigo_empleado)}}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('editEmp', $emp->codigo_empleado)}}" method="POST" enctype="multipart/form-data">
                             @csrf @method('PATCH')
 
 

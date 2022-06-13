@@ -38,7 +38,7 @@
         <ul class="w-1/2 px-16 ml-auto flex justify-end pt-2">
 
 
-            <a href="{{url('/listaEmpleado')}}"class="btn btn-outline-info">
+            <a href="{{url('/listaEmp')}}"class="btn btn-outline-info">
                 <i class="fa fa-home"> Lista de Empleados</i>
             </a>
 
@@ -51,10 +51,10 @@
     </a>
 </nav>
 <div class="container">
-@yield('content') <!--para navbar-->
+@yield('content')
 </div>
 
 <script src="{{asset('js/app.js')}}"></script>
-@yield('js')<!--Ayuda con mostrar el mensaje de error-->
+@yield('js')
 </body>
 </html>
