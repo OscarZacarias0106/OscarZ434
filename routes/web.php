@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SesionController;
 use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\EmpleaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +31,20 @@ Route::post('/', [SesionController::class, 'store'])->name('login.store');
 Route::get('/logout', [SesionController::class, 'destroy'])
     ->middleware('auth')
     ->name('login.destroy');
+
+
+Route::get('/listaEmp', [EmpleaController::class,'listaEmp']);
+
+Route::get('/formEmp', [EmpleaController::class,'formEmp']);
+
+
+Route::post('/empleados/emp', [EmpleaController::class,'saveEmp'])->name('Emp.save');
+
+
+Route::get('/editformEmp/{codigo_empleado}', [EmpleaController::class,'editformEmp'])->name('editformEmp');
+
+
+Route::patch('/editEmp/{codigo_empleado}', [EmpleaController::class, 'editEmp'])->name('editEmp');
+
+
+Route::delete('/deleteEmp/{codigo_empleado}', [EmpleaController::class,'destroy'])->name('deleteEmp');
