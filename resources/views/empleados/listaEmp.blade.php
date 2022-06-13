@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="cold-md-11">
                 <h1 class="text-center mb-5">
-                    <i class="fa fa-users"> Lista de empleados</i>
+                    <i class="fas fa-user-circle"> Lista de empleados</i>
                 </h1>
 
                 <a class="btn btn-success mb-4" href="{{url('/formEmp')}}">
@@ -25,6 +25,7 @@
                         <th scope="col">Correo</th>
                         <th scope="col">Dirección</th>
                         <th scope="col">Departamento</th>
+                        <th scope="col">Registrado por</th>
                         <th scope="col">Acciones</th>
                     </tr>
                     </thead>
@@ -42,6 +43,7 @@
                             <td>{{$emps->correo}}</td>
                             <td>{{$emps->direccion}}</td>
                             <td>{{$emps->departamento}}</td>
+                            <td>{{$emps->name}}</td>
                             <td>
 
                                 <div class="btn-group">

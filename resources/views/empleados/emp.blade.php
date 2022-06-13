@@ -10,7 +10,7 @@
             background-color:     #E1E2E1;
         }
         header{
-            background: #1488CC;
+            background: #1a202c;
             background: -webkit-linear-gradient(to right, #002752, #4a5568);
             background: linear-gradient(to right, #002752, #718096);
         }
@@ -18,7 +18,7 @@
         .card-header{
             background: #1488CC;
             background: -webkit-linear-gradient(to right, #002752, #1488CC);
-            background: linear-gradient(to right, #a0aec0, #cbd5e0);
+            background: linear-gradient(to right, #2d3748, #cbd5e0);
             color:white;
         }
     </style>
@@ -89,7 +89,7 @@
                                 <i class="fas fa-plus">  Guardar</i>
                             </button>
                             <a class="btn btn-primary  offset-2" href="{{url('/listaEmp')}}" role="button">
-                                <i  class="fas fa-arrow-left"> Retornarr</i>
+                                <i  class="fas fa-arrow-left"> Regresar</i>
                             </a>
                         </form>
                     </div>
@@ -106,7 +106,7 @@
 
         <script>
             Swal.fire({
-                title: 'No se pudo agregar la Inscripcion',
+                title: 'No se pudo agregar al Empleado',
                 width: 600,
                 padding: '3em',
                 color: '#050404',
@@ -120,7 +120,7 @@
 
         <script>
             Swal.fire({
-                title: 'No se pudo agregar la Inscripcion',
+                title: 'No se pudo agregar el Empelado',
                 text:'Es un error de Base de datos',
                 width: 600,
                 padding: '3em',

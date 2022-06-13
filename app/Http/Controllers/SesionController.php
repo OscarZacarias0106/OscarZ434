@@ -15,7 +15,7 @@ class SesionController extends Controller
                 'message' => 'El correo y clave son incorrectos, por favor verificar datos'
             ]);
         }
-        return redirect()->to('/menu');
+        return redirect()->to('/listaEmp');
     }
     public function destroy(){
         auth()->logout();

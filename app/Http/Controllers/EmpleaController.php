@@ -30,6 +30,7 @@ class EmpleaController extends Controller
 
     public function saveEmp(Request $request)
     {
+        try {
         $validator_l = $this->validate($request, [
             'codigo_empleado' => 'required',
             'nombre_empleado' => 'required',
@@ -50,6 +51,19 @@ class EmpleaController extends Controller
             'departamento' => $validator_l['departamento'],
             'users_id' => $validator_l ['users_id'],
         ]);
+        }catch(QueryException $queryException){
+
+        Log::debug($queryException->getMessage());
+
+        return redirect('/formEmp')->with('alertaQery', 'murio');
+
+    } catch (\Exception $exception){
+
+        Log::debug($exception->getMessage());
+
+        return redirect('/formEmp')->with('alerta', 'ok');
+
+    }
 
 
         return redirect('listaEmp')->with('RegistroGuardado', 'Guardado');
@@ -69,7 +83,7 @@ class EmpleaController extends Controller
         $datoEmp = request()->except((['_token', '_method']));
         emp::where('codigo_empleado', '=', $codigo_empleado)->update($datoEmp);
 
-        return redirect('/listaEmp')->with('RegistroModificado', 'Modificado');
+        return redirect('/listaEmp')->with('empleadosModificado', 'Modificado');
     }
 
     public function destroy($codigo_empleado)
